@@ -54,6 +54,13 @@ margin-bottom: 1em;
 
 }
 
+.descricao-imagem-second{
+    width: clamp(120px, 30vw, 220px);
+    height: clamp(120px, 30vw, 220px);
+    object-fit: cover;
+    border-radius: 8px;
+}
+
 .paragrafo-angular-second{
     font-size: 11px;
     width: 97%;
