@@ -10,6 +10,9 @@
 
 .swiper-slide img{
     width: 100%;
+    height: clamp(220px, 42vw, 460px);
+    object-fit: contain;
+    display: block;
 }
 
 .swiper-slide img:hover{
@@ -62,6 +65,13 @@
     margin: 0.8em 0;
 }
 
+.descricao-imagem{
+    width: clamp(120px, 28vw, 220px);
+    height: clamp(120px, 28vw, 220px);
+    object-fit: cover;
+    border-radius: 8px;
+}
+
 .botao-item{
     margin: 0 0.5em;
     width: 3em;
@@ -97,7 +107,8 @@
         margin: 3em 0em;
     }
     .swiper-slide img{
-        width: 90%;
+        width: 100%;
+        height: clamp(280px, 32vw, 520px);
     }
 
     .descricao-titulo{
@@ -117,7 +128,8 @@
     }
 
     .descricao-imagem{
-        width: 30%;
+        width: clamp(180px, 24vw, 280px);
+        height: clamp(180px, 24vw, 280px);
     }
 
     .botao-ancora{
@@ -143,9 +155,9 @@
 
 @media screen and (min-width:1728px){
     .swiper-slide img{
-        width: 45em;
-        height: 45em;
-        margin: auto 1.5em;
+        width: 100%;
+        height: clamp(320px, 24vw, 560px);
+        margin: auto;
     }
 
     .swiper-slide.swiper-slide-active{
@@ -153,7 +165,8 @@
     }
 
     .descricao-imagem{
-        width: 25%;
+        width: clamp(220px, 18vw, 300px);
+        height: clamp(220px, 18vw, 300px);
         margin-right: 2em;
     }
 
